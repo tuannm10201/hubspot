@@ -1,0 +1,29 @@
+:root {
+  --primary-dark-purple-color: rgba(27, 26, 61, 1);
+  --primary-blue-color: rgba(39, 65, 241, 1);
+  --purple-bg-color: rgba(228, 230, 248, 1);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.bg-blue {
+  background-color: var(--primary-blue-color);
+}
+
+.color-dark-purple {
+  color: var(--primary-dark-purple-color);
+}
+
+.bg-purple {
+  background-color: var(--purple-bg-color);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul li {
+  cursor: pointer;
+}
