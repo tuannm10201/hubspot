@@ -11,13 +11,21 @@
   </head>
   <body>
     <header>
-      <div class="container-fluid">
-        <div class="d-flex align-items-center justify-content-between">
+      <div class="container-fluid py-1">
+        <div
+          class="d-flex align-items-center justify-content-between flex-column flex-lg-row gap-3 gap-lg-0"
+        >
           <div class="d-flex align-items-center gap-1">
-            <img src="/assets/icon/logo.svg" alt="logo-hubspot" />
+            <img src="assets/icon/logo.svg" alt="logo-hubspot" />
             <div class="text-capitalize lh-sm text-white fs-7">
               create <br />
               force
+            </div>
+
+            <div class="d-flex align-items-center gap-3 fs-7 d-lg-none ps-4">
+              <button class="off-white-btn text-uppercase">login</button>
+              <button class="blue-btn text-uppercase me-2">book a demo</button>
+              <img src="assets/icon/search.svg" alt="search" />
             </div>
           </div>
 
@@ -30,113 +38,465 @@
             <li>pricing</li>
           </ul>
 
-          <div class="d-flex align-items-center gap-3 fs-7">
-            <div class="off-white-btn text-uppercase">login</div>
-            <div class="blue-btn text-uppercase me-2">book a demo</div>
-            <img src="/assets/icon/search.svg" alt="search" />
+          <div class="d-flex align-items-center gap-3 fs-7 d-none d-lg-block">
+            <button class="off-white-btn text-uppercase">login</button>
+            <button class="blue-btn text-uppercase me-2">book a demo</button>
+            <img src="assets/icon/search.svg" alt="search" />
           </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="top-header pt-5">
-        <div class="px-4 pt-3 pb-5">
-          <div class="container mt-5 text-white">
-            <h1>Choose the best plan for your business</h1>
-            <div class="mt-2">
-              Find the perfect plan tailored to your organization’s production
-              volume and needs.
-            </div>
+      <section class="top-header pt-5 px-4 pb-5">
+        <div class="container mt-5 mb-4 text-white">
+          <h1 class="mt-3 pt-lg-0 pt-5">
+            Choose the best plan for your business
+          </h1>
+          <div class="mt-2">
+            Find the perfect plan tailored to your organization’s production
+            volume and needs.
+          </div>
 
-            <div class="mt-4 mb-2">
-              <div class="estimation-range text-white">
-                <span class="px-2 py-1 text-center estimation">Estimation</span>
-                I deliver
-                <span class="off-white-btn py-1 px-2">10,000</span>
-                final assets yearly
-                <img src="/assets/icon/info.svg" alt="info" />
+          <div class="mt-4 mb-2">
+            <div class="estimation-range text-white">
+              <span class="px-2 py-1 text-center estimation">Estimation</span>
+              I deliver
+              <span class="off-white-btn py-1 px-2">10,000</span>
+              final assets yearly
+              <img src="assets/icon/info.svg" alt="info" />
+            </div>
+            <div class="range">
+              <div class="range-slider">
+                <input
+                  type="range"
+                  min="0"
+                  max="12"
+                  value="1"
+                  class="range-input"
+                  id="range4"
+                  step="1"
+                />
+                <div class="input-color-container">
+                  <div class="input-color"></div>
+                </div>
+                <div class="sliderticks tick-1">
+                  <span class="slidertick opacity-0"> </span>
+                  <span class="slidertick"> </span>
+                  <span class="slidertick"> </span>
+                  <span class="slidertick"> </span>
+                  <span class="slidertick"> </span>
+                  <span class="slidertick"> </span>
+                  <span class="slidertick"> </span>
+                  <span class="slidertick"> </span>
+                  <span class="slidertick"> </span>
+                  <span class="slidertick"> </span>
+                  <span class="slidertick"> </span>
+                  <span class="slidertick"> </span>
+                  <span class="slidertick position-relative" style="left: 5px">
+                  </span>
+                </div>
               </div>
-              <div class="range">
-                <div class="range-slider">
-                  <input
-                    type="range"
-                    min="0"
-                    max="12"
-                    value="0"
-                    class="range-input"
-                    id="range4"
-                    step="1"
-                  />
-                  <div class="sliderticks tick-1">
-                    <span class="slidertick opacity-0"> </span>
-                    <span class="slidertick"> </span>
-                    <span class="slidertick"> </span>
-                    <span class="slidertick"> </span>
-                    <span class="slidertick"> </span>
-                    <span class="slidertick"> </span>
-                    <span class="slidertick"> </span>
-                    <span class="slidertick"> </span>
-                    <span class="slidertick"> </span>
-                    <span class="slidertick"> </span>
-                    <span class="slidertick"> </span>
-                    <span class="slidertick"> </span>
-                    <span
-                      class="slidertick position-relative"
-                      style="left: 5px"
-                    >
-                    </span>
+              <div class="sliderticks tick-2" style="pointer-events: all">
+                <span class="slidertick opacity-0" data-value="0">
+                  <div></div>
+                </span>
+                <span class="slidertick">
+                  <div data-value="1">10,000</div>
+                </span>
+                <span class="slidertick">
+                  <div data-value="2">20,000</div>
+                </span>
+                <span class="slidertick">
+                  <div data-value="3">30,000</div>
+                </span>
+                <span class="slidertick">
+                  <div data-value="4">40,000</div>
+                </span>
+                <span class="slidertick">
+                  <div data-value="5">50,000</div>
+                </span>
+                <span class="slidertick">
+                  <div data-value="6">60,000</div>
+                </span>
+                <span class="slidertick">
+                  <div data-value="7">70,000</div>
+                </span>
+                <span class="slidertick">
+                  <div data-value="8">80,000</div>
+                </span>
+                <span class="slidertick">
+                  <div data-value="9">100,000</div>
+                </span>
+                <span class="slidertick">
+                  <div data-value="10">150,000</div>
+                </span>
+                <span class="slidertick">
+                  <div data-value="11">200,000</div>
+                </span>
+                <span class="slidertick">
+                  <div data-value="12">Talk to sales</div>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-5 pt-3 gap-4 gap-md-0">
+            <div class="col-md-4 col-sm-12">
+              <div class="p-4 bg-white rounded color-dark-purple h-100">
+                <h4 class="color-blue">Starter</h4>
+                <div class="mt-2">Starts at</div>
+                <div class="d-flex mt-1 align-items-center gap-2">
+                  <h2 class="mb-0 price" id="starter-price">$2,400</h2>
+                  <div class="color-light-purple month-billed">
+                    /month <br />
+                    billed yearly
                   </div>
                 </div>
-                <div class="sliderticks tick-2" style="pointer-events: all">
-                  <span class="slidertick opacity-0" data-value="0">
-                    <div></div>
-                  </span>
-                  <span class="slidertick">
-                    <div data-value="1">10,000</div>
-                  </span>
-                  <span class="slidertick">
-                    <div data-value="2">20,000</div>
-                  </span>
-                  <span class="slidertick">
-                    <div data-value="3">30,000</div>
-                  </span>
-                  <span class="slidertick">
-                    <div data-value="4">40,000</div>
-                  </span>
-                  <span class="slidertick">
-                    <div data-value="5">50,000</div>
-                  </span>
-                  <span class="slidertick">
-                    <div data-value="6">60,000</div>
-                  </span>
-                  <span class="slidertick">
-                    <div data-value="7">70,000</div>
-                  </span>
-                  <span class="slidertick">
-                    <div data-value="8">80,000</div>
-                  </span>
-                  <span class="slidertick">
-                    <div data-value="9">100,000</div>
-                  </span>
-                  <span class="slidertick">
-                    <div data-value="10">150,000</div>
-                  </span>
-                  <span class="slidertick">
-                    <div data-value="11">200,000</div>
-                  </span>
-                  <span class="slidertick">
-                    <div data-value="12">Talk to sales</div>
-                  </span>
+                <div class="mt-2 equal-height">
+                  For retailers of all sizes. Get started with workflow
+                  automation and get benefits from day one.
                 </div>
+                <button class="blue-btn mt-3 text-uppercase">
+                  get a quote
+                </button>
 
-                <!-- <div class="value4">0</div> -->
+                <ul class="mt-3">
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    <span class="fw-bold"> Unlimited Users </span>
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Images, Video & Copy
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Digital Style Guides
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Workflow Automation
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Metadata Enrichment
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Sample Management
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    File Automation
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Asset Hub
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    API & Webhooks
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    All Connectors
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Standard Reporting
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Email Support
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Online Academy
+                  </li>
+                </ul>
               </div>
-              <!-- ... -->
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="p-4 bg-white rounded color-dark-purple h-100">
+                <h4 class="color-blue">Core</h4>
+                <div class="mt-2">Starts at</div>
+                <div class="d-flex mt-1 align-items-center gap-2">
+                  <h2 class="mb-0 price" id="core-price">$4,100</h2>
+                  <div class="color-light-purple month-billed">
+                    /month <br />
+                    billed yearly
+                  </div>
+                </div>
+                <div class="mt-2 equal-height">
+                  For retailers of all sizes with a need for advanced workflow
+                  automation. Take your business to the next level.
+                </div>
+                <button class="blue-btn mt-3 text-uppercase">
+                  get a quote
+                </button>
+
+                <ul class="mt-3">
+                  <li class="d-flex align-items-center gap-2">
+                    <span class="fw-bold"> Everything in Starter + </span>
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    AI Automation
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    2FA & SSO
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Data Sources
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Workflow Logic & Alerts
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Styling & Outfitting
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Mobile Application
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Planning Calendar
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Capture One Integration
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Adobe Photoshop Integration
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Custom Reporting
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    24/5 In-App Chat Support
+                  </li>
+
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Collection Sharing
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="p-4 bg-white rounded color-dark-purple h-100">
+                <h4 class="color-blue">Enterprise</h4>
+                <div class="d-flex mt-4 pt-2 align-items-center gap-2">
+                  <h2 class="mb-0 price">Custom</h2>
+                </div>
+                <div class="mt-2 equal-height">
+                  For retailers of all sizes with a need for advanced workflow
+                  automation. Take your business to the next level.
+                </div>
+                <button class="blue-btn mt-3 text-uppercase">
+                  get a quote
+                </button>
+
+                <ul class="mt-3">
+                  <li class="d-flex align-items-center gap-2">
+                    <span class="fw-bold"> Everything in Starter + </span>
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    AI Automation
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    2FA & SSO
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Data Sources
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Workflow Logic & Alerts
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Styling & Outfitting
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Mobile Application
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Planning Calendar
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Capture One Integration
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Adobe Photoshop Integration
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Custom Reporting
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    24/5 In-App Chat Support
+                  </li>
+
+                  <li class="d-flex align-items-center gap-2">
+                    <img src="assets/icon/tick.svg" alt="tick" />
+                    Collection Sharing
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 mb-3 text-center">
+            <h3 class="gap-2 d-flex align-items-center justify-content-center">
+              Elevate your studio with
+              <img
+                src="assets/icon/union.svg"
+                alt="union"
+                class="d-none d-md-inline"
+              />
+              AI-powered innovations.
+            </h3>
+            <img
+              src="assets/icon/union.svg"
+              alt="union"
+              class="d-inline d-md-none text-center"
+            />
+          </div>
+          <p class="px-4 text-center w-75 mx-auto">
+            At Creative Force, we research, test, and develop innovative
+            AI-driven solutions that empower creative teams to transform their
+            content production processes.
+          </p>
+
+          <div class="row mt-4 gap-3 gap-lg-0">
+            <div class="col-12 col-lg-6">
+              <div class="position-relative card-top h-100">
+                <img
+                  src="assets/img/woman.png"
+                  alt="in-development"
+                  width="50%"
+                  class="indevelopment-img"
+                />
+                <span class="badge live">live</span>
+                <div
+                  class="pt-4 pe-2 d-flex flex-column justify-content-center card-desc"
+                >
+                  <h4>E-Commerce Copywriting</h4>
+                  <p>
+                    Supercharge copy production with our multidimensional  AI
+                    copywriter.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="position-relative card-top h-100">
+                <div class="position-relative work-group-container">
+                  <img
+                    src="assets/img/work-group-img.svg"
+                    height="100%"
+                    alt="work-group"
+                    class="work-group-img"
+                  />
+                  <img
+                    src="assets/img/work-group-arrow.svg"
+                    alt="work-group-arrow"
+                    class="work-group-arrow-img"
+                    height="100%"
+                    width="60%"
+                  />
+                </div>
+                <span class="badge live">live</span>
+                <div
+                  class="pt-4 pe-2 d-flex flex-column justify-content-center card-desc"
+                >
+                  <h4>Workflow</h4>
+                  <p>
+                    Build flexible, custom workflows that integrate with the
+                    most advanced AI services available.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4 gap-3 gap-lg-0">
+            <div class="col-12 col-lg-4">
+              <div class="position-relative card-top overflow-hidden h-100">
+                <img
+                  src="assets/img/in-development-1.png"
+                  alt="in-development"
+                  width="40%"
+                  height="100%"
+                  class="indevelopment-img"
+                />
+                <span class="badge in-development">in development</span>
+                <div
+                  class="pt-5 pe-2 ps-4 d-flex flex-column justify-content-center card-desc"
+                >
+                  <h4>Garment Labels</h4>
+                  <p>
+                    Convert garment label information into digital data during
+                    sample check-in.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="position-relative card-top overflow-hidden h-100">
+                <img
+                  src="assets/img/in-development-2.png"
+                  alt="in-development"
+                  width="40%"
+                  height="100%"
+                  class="indevelopment-img"
+                />
+                <span class="badge in-development">in development</span>
+                <div
+                  class="pt-5 pe-2 ps-4 d-flex flex-column justify-content-center card-desc"
+                >
+                  <h4>Digital Models</h4>
+                  <p>Increase image variety with advanced digital models.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="position-relative card-top overflow-hidden h-100">
+                <img
+                  src="assets/img/in-development-3.png"
+                  alt="in-development"
+                  width="40%"
+                  height="100%"
+                  class="indevelopment-img"
+                />
+                <span class="badge in-development">in development</span>
+                <div
+                  class="pt-5 pe-2 ps-4 d-flex flex-column justify-content-center card-desc"
+                >
+                  <h4>Color Variations</h4>
+                  <p>Produce accurate and consistent color variations.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- ... -->
       </section>
 
       <section class="unlock-new py-5">
