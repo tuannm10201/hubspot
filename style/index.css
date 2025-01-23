@@ -27,3 +27,108 @@ ul {
 ul li {
   cursor: pointer;
 }
+
+.fs-7 {
+  font-size: 0.875rem;
+}
+
+/* hedaer  */
+.header {
+  background: linear-gradient(180deg, #1b1a3f 0%, #05008d 50%, #1e42fb 100%);
+}
+.nav-menu {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.off-white-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+.blue-btn {
+  background-color: var(--primary-blue-color);
+  color: white;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+/* custom range slider  */
+.value2,
+.value3,
+.value4 {
+  font-size: 26px;
+  width: 50px;
+  text-align: center;
+}
+
+#range4 {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  height: 20px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#range4::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 24px;
+  width: 24px;
+  background-color: var(--primary-blue-color);
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+#range4::-moz-range-thumb {
+  height: 24px;
+  width: 24px;
+  background-color: var(--primary-blue-color);
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+.range-slider {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.range-input {
+  position: absolute;
+  cursor: pointer;
+}
+
+.sliderticks {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: calc(100% - 16px);
+  left: 8px;
+}
+
+.sliderticks span {
+  display: flex;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  line-height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.sliderticks span div {
+  height: 50px;
+  display: flex;
+  align-items: end;
+}
+
+.range {
+  display: flex;
+  align-items: center;
+}
