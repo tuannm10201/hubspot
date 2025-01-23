@@ -33,7 +33,22 @@ ul li {
 }
 
 /* hedaer  */
-.header {
+header {
+  position: fixed;
+  width: 100%;
+  transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease,
+    border-bottom 0.5s ease;
+}
+
+header.hidden {
+  opacity: 0;
+}
+header.scrolled {
+  padding: 0.4rem 0;
+}
+
+/* top-hedaer  */
+.top-header {
   background: linear-gradient(180deg, #1b1a3f 0%, #05008d 50%, #1e42fb 100%);
 }
 .nav-menu {
@@ -50,6 +65,16 @@ ul li {
   color: white;
   border-radius: 8px;
   padding: 0.5rem 1rem;
+}
+
+.estimation-range {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.estimation {
+  border: 1.5px solid rgb(87, 84, 189);
+  border-radius: 8px;
 }
 
 /* custom range slider  */
@@ -108,11 +133,10 @@ ul li {
   position: absolute;
   width: calc(100% - 16px);
   left: 8px;
+  pointer-events: none;
 }
 
 .sliderticks span {
-  display: flex;
-  justify-content: center;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -123,12 +147,24 @@ ul li {
   cursor: pointer;
 }
 .sliderticks span div {
-  height: 50px;
+  height: 35px;
   display: flex;
   align-items: end;
 }
 
-.range {
+.tick-2 {
+  margin-top: 0.5rem;
+}
+.tick-2 .slidertick {
   display: flex;
-  align-items: center;
+  justify-content: center;
+}
+
+.tick-2 span {
+  background-color: transparent !important;
+}
+
+.range {
+  margin-top: 1.3rem;
+  position: relative;
 }
