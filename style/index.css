@@ -73,6 +73,7 @@ header.hidden {
   padding: 0.5rem 1rem;
   outline: none;
   border: none;
+  text-transform: uppercase;
 }
 
 .estimation-range {
@@ -279,4 +280,56 @@ header.hidden {
 }
 .indevelopment-img {
   object-fit: cover;
+}
+
+/* unlock new  */
+.unlock-new-card {
+  box-shadow: 0 6px 20px 5px rgba(0, 0, 0, 0.1);
+}
+.unlock-new-card-top {
+  background: linear-gradient(100.66deg, #c6caee 15.61%, #ffffff 84.51%);
+}
+.ellipse-bg-img {
+  position: absolute;
+  right: -100px;
+  top: -400px;
+  z-index: -1;
+  aspect-ratio: 1;
+  opacity: 0.5;
+}
+.mansory-container {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.readmore-btn {
+  width: max-content;
+}
+.unlock-new-bottom-right-img {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+}
+.add-on {
+  background-color: var(--primary-dark-purple-color);
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  transform: rotate(45deg);
+  font-size: small;
+  width: fit-content;
+  top: 100px;
+  right: -40px;
+  width: 200px;
+  transform: rotate(45deg);
+  transform-origin: top right;
+}
+
+.unlock-new-card-bottom {
+  background: linear-gradient(100.66deg, #96d0f5 15.61%, #ffffff 84.51%);
+}
+.editorial-1-img {
+  object-fit: cover;
+  left: 0;
 }
