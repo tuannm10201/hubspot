@@ -105,24 +105,14 @@ header.hidden {
   height: 20px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.1);
-  /* background: linear-gradient(to right, red 0%, white 0%); */
 }
 
 #range4::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  height: 24px;
-  width: 24px;
-  background-color: var(--primary-blue-color);
-  border-radius: 50%;
+  visibility: hidden;
 }
 
 #range4::-moz-range-thumb {
-  height: 24px;
-  width: 24px;
-  background-color: var(--primary-blue-color);
-  border: 3px solid #fff;
-  border-radius: 50%;
+  visibility: hidden;
 }
 
 .input-color-container {
@@ -220,15 +210,15 @@ header.hidden {
 /* end range slider  */
 
 .price {
-  font-size: 3.5vw;
+  font-size: 3.2vw;
 }
 .month-billed {
   font-size: 1vw;
 }
 
-@media screen and (min-width: 1486px) {
+@media screen and (min-width: 1486px), screen and (max-width: 768px) {
   .price {
-    font-size: 3rem;
+    font-size: 3rem; /* Ensure font size is 3rem for both large and small screens */
   }
   .month-billed {
     font-size: 15px;
