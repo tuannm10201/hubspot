@@ -195,10 +195,22 @@ function setEqualHeight() {
 }
 
 // Run when the window is ready and on resize
+
+const col3 = document.getElementById("col-3");
+const col3Overlay = document.querySelector(".col-3-overlay");
+
 setEqualHeight();
 updateStep();
+updateColOverlay();
 window.addEventListener("resize", () => {
   setEqualHeight();
   updateStep();
+  updateColOverlay();
   //update step base on width
 });
+
+function updateColOverlay() {
+  const rect = col3.getBoundingClientRect();
+  col3Overlay.style.width = rect.width + "px";
+  col3Overlay.style.left = rect.left + "px";
+}

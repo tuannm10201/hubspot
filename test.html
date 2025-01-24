@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Force Cloud</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Creative Force Cloud</h1>
+      <p>
+        Scalable, secure, and built for seamless collaboration across unlimited
+        users and clients.
+      </p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Plan 1</th>
+              <th>Plan 2</th>
+              <th>Plan 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Users</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>Workspaces (Clients)</td>
+              <td>1</td>
+              <td>3</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>Additional Workspaces</td>
+              <td></td>
+              <td>$</td>
+              <td>$</td>
+            </tr>
+            <tr>
+              <td>Cloud Based</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr class="hidden">
+              <td>Dedicated Database</td>
+              <td></td>
+              <td></td>
+              <td>$</td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+      <button id="show-more">Show All</button>
+    </div>
+  </body>
+  <script>
+    document.getElementById("show-more").addEventListener("click", function () {
+      const hiddenRows = document.querySelectorAll("tr.hidden");
+      hiddenRows.forEach((row) => {
+        row.style.display =
+          row.style.display === "table-row" ? "none" : "table-row";
+      });
+      this.textContent =
+        this.textContent === "Show All" ? "Show Less" : "Show All";
+    });
+  </script>
+</html>
