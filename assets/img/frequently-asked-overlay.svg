@@ -1,0 +1,17 @@
+<svg width="787" height="1115" viewBox="0 0 787 1115" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_1_198)">
+<circle cx="557.78" cy="557.779" r="357" transform="rotate(43.8913 557.78 557.779)" fill="url(#paint0_angular_1_198)" fill-opacity="0.5" style=""/>
+</g>
+<defs>
+<filter id="filter0_f_1_198" x="0.779297" y="0.778809" width="1114" height="1114" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_1_198"/>
+</filter>
+<radialGradient id="paint0_angular_1_198" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(626.205 411.013) rotate(-144.973) scale(352.402)">
+<stop stop-color="#933AFF" style="stop-color:#933AFF;stop-color:color(display-p3 0.5759 0.2288 1.0000);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#7CBDFD" style="stop-color:#7CBDFD;stop-color:color(display-p3 0.4855 0.7394 0.9933);stop-opacity:1;"/>
+<stop offset="1" stop-color="#FF9BF5" style="stop-color:#FF9BF5;stop-color:color(display-p3 1.0000 0.6095 0.9609);stop-opacity:1;"/>
+</radialGradient>
+</defs>
+</svg>

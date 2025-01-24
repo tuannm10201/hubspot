@@ -214,3 +214,5 @@ function updateColOverlay() {
   col3Overlay.style.width = rect.width + "px";
   col3Overlay.style.left = rect.left + "px";
 }
+
+/* frequently-asked  */
