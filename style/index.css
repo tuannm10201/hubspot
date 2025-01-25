@@ -11,6 +11,7 @@ html {
 
 body {
   overflow-x: hidden;
+  height: 100vh;
 }
 
 .bg-blue {
@@ -245,7 +246,7 @@ header.hidden {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 1rem;
+  top: 1.5rem;
   padding: 0.25rem 0.8rem;
   border-radius: 0.2rem;
   text-transform: uppercase;
@@ -331,8 +332,21 @@ header.hidden {
   object-fit: cover;
   left: 0;
 }
+.unlock-new .w-75 {
+  width: 100% !important;
+}
+@media (min-width: 992px) {
+  .unlock-new .w-75 {
+    width: 75% !important;
+  }
+}
 
 /* compare-plans */
+.compare-plans {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
 .key-features {
   opacity: 0.4;
 }
@@ -481,12 +495,13 @@ details[open] summary:after {
 
 .frequently-asked-overlay {
   position: absolute;
-  bottom: -50px;
-  right: -50px;
+  bottom: -80px;
+  right: -60px;
   height: 70%;
+  min-height: 400px;
   max-height: 500px;
   aspect-ratio: 1;
-  object-fit: cover;
+  object-fit: contain;
   pointer-events: none;
 }
 
